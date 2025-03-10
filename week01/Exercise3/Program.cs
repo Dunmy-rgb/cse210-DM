@@ -12,7 +12,6 @@ class Program
         while (response.ToLower() == "yes")
         {
             Random randomGenerator = new Random();
-            
 
             int answer = randomGenerator.Next(1, 101);
 
