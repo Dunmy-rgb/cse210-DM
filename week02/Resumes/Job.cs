@@ -1,6 +1,6 @@
 using System;
 
-class Job
+public class Job
 {
   // static void Main(string[] args)
   public string _jobTitle = "";
