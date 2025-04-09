@@ -20,9 +20,6 @@ class Program
         circle.GetColor();
         circle.GetArea();
 
-        // Console.WriteLine(square.GetColor());
-        // Console.WriteLine(square.GetArea());
-
         List<Shape> shapes = new List<Shape>();
         shapes.Add(square);
         shapes.Add(rectangle);
@@ -33,7 +30,7 @@ class Program
             string color = s.GetColor();
             double area = s.GetArea();
 
-            Console.WriteLine($"The color of the shape is {color}. The area of the shape is {area}$");
+            Console.WriteLine($"The color of the shape is {color}. The area of the shape is {area}");
         }        
     }
 }
