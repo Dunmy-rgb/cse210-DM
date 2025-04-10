@@ -1,0 +1,4 @@
+0
+SimpleGoal|be calm|calm|22|False
+marriage|get married|88
+ChecklistGoal|become non-challant|non-challant|55|40|0|12

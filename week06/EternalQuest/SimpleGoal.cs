@@ -2,9 +2,11 @@ using System;
 
 namespace EternalQuest
 {
-  public class SimpleGoal(string name, string description, int points) : Goal(name, description, points)
+  public class SimpleGoal : Goal
   {
     private bool _isComplete = false;
+
+    public SimpleGoal(string name, string description, int points) : base(name, description, points) { }
 
     public override void RecordEvent()
     {
@@ -23,10 +25,6 @@ namespace EternalQuest
       return $"{checkbox} {_goalName} ({_description})";
     }
 
-    // Override GetStringRepresentation: for saving/loading
-    public override string GetStringRepresentation()
-    {
-      return $"SimpleGoal|{_goalName}|{_description}|{_points}|{_isComplete}";
-    }
+    public override string GetStringRepresentation() => $"SimpleGoal|{_goalName}|{_description}|{_points}|{_isComplete}";
   }
 }
